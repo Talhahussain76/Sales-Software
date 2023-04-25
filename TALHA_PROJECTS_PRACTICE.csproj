@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{030D2433-D10F-4E10-9151-99D1AC16F65B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TALHA_PROJECTS_PRACTICE</RootNamespace>
+    <AssemblyName>TALHA_PROJECTS_PRACTICE</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectADODBPos.cs" />
+    <Compile Include="ConnectDatabasePos.cs" />
+    <Compile Include="frmBrandTalha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBrandTalha.Designer.cs">
+      <DependentUpon>frmBrandTalha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmailAttachmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmailAttachmentForm.Designer.cs">
+      <DependentUpon>frmEmailAttachmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIncrement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIncrement.Designer.cs">
+      <DependentUpon>frmIncrement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBindCBwithAnother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBindCBwithAnother.Designer.cs">
+      <DependentUpon>frmBindCBwithAnother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrud1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrud1.Designer.cs">
+      <DependentUpon>frmCrud1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewLogin.Designer.cs">
+      <DependentUpon>FrmNewLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayroll.Designer.cs">
+      <DependentUpon>frmPayroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignOutFunction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignOutFunction.Designer.cs">
+      <DependentUpon>frmSignOutFunction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignUp.Designer.cs">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBindCB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBindCB.Designer.cs">
+      <DependentUpon>frmBindCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.Designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTalhaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTalhaLogin.Designer.cs">
+      <DependentUpon>frmTalhaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBrandTalha.resx">
+      <DependentUpon>frmBrandTalha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmailAttachmentForm.resx">
+      <DependentUpon>frmEmailAttachmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIncrement.resx">
+      <DependentUpon>frmIncrement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBindCB.resx">
+      <DependentUpon>frmBindCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBindCBwithAnother.resx">
+      <DependentUpon>frmBindCBwithAnother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrud1.resx">
+      <DependentUpon>frmCrud1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewLogin.resx">
+      <DependentUpon>FrmNewLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayroll.resx">
+      <DependentUpon>frmPayroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignOutFunction.resx">
+      <DependentUpon>frmSignOutFunction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignUp.resx">
+      <DependentUpon>frmSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTalhaLogin.resx">
+      <DependentUpon>frmTalhaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-no-photo-icon-png-image_1557651.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
